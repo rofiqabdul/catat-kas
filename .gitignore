@@ -1,5 +1,6 @@
 node_modules
 bun.lock
+supabase/snippets/
 
 # Output
 .output
