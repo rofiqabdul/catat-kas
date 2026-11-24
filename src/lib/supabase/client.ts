@@ -3,8 +3,9 @@ import {
 	PUBLIC_SUPABASE_URL,
 	PUBLIC_SUPABASE_PUBLISHABLE_KEY
 } from '$app/env/public';
+import type { Database } from './database.types';
 
-export const supabase = createClient(
+export const supabase = createClient<Database>(
 	PUBLIC_SUPABASE_URL,
 	PUBLIC_SUPABASE_PUBLISHABLE_KEY
 );
